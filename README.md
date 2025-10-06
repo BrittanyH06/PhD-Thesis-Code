@@ -13,7 +13,6 @@ For experimental context, see the **Materials and Methods** chapter of the thesi
 ## Repository Structure
 ```
 PhD-Thesis-Code/
-├── notebooks/          # Jupyter notebooks for simulations and analyses
 ├── src/                # Core Python scripts (model equations, optimization, plotting)
 ├── requirements.txt    # Python dependencies
 └── README.md           # This file
