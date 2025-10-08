@@ -283,7 +283,7 @@ s_ss0 = lambda_0_glu * (
 plt.figure(figsize=(10,6))
 for N in N_values_glu:
     t_on, t_off = 1.0, 1.0 + N
-    lam_f  = lambda_0_glu / (1 + 4.0 / N)
+    lam_f  = lambda_0_glu / (1 + prefactor_glu / N)
     s_ssA  = lam_f * (r_max - lam_f / kappa_n_glu)
 
     sol = solve_ivp(lambda t,y: model_equations(t, y),
