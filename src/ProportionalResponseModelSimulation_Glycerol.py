@@ -278,7 +278,7 @@ s_ss0 = lambda_0_gly * (
 plt.figure(figsize=(10,6))
 for N in N_values_gly:
     t_on, t_off = 1.0, 1.0 + N
-    lam_f  = lambda_0_gly / (1 + 4.0 / N)
+    lam_f  = lambda_0_gly / (1 + prefactor_gly / N)
     s_ssA  = lam_f * (r_max - lam_f / kappa_n_gly)
 
     sol = solve_ivp(lambda t,y: model_equations(t, y),
