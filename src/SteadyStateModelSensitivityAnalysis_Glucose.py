@@ -48,11 +48,11 @@ params = {
     "r_min": 5.4,
     "r_max": 54.4,
     "kappa_t": 0.058,
-    "k_off": None,
-    "k_on": None,
-    "P_in": None,
-    "P_out": None,
-    "lambda_0_glu": 0.64
+    "k_off": None,         # FILL IN: off-rate (1/h)
+    "k_on": None,          # FILL IN: on-rate  (1/(µM·h))
+    "P_in": None,          # FILL IN: influx rate  (1/h)
+    "P_out": None,         # FILL IN: efflux rate  (1/h)
+    "lambda_0_glu": 0.64   # drug-free growth rate (1/h)
 }
 
 def update_derived_params(p):
