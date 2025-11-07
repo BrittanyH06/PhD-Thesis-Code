@@ -640,7 +640,7 @@ print_summary(df_glu_pulse, "SENSITIVITIES — Pulse-only RNA/P MSE (Glucose)")
 print_summary(df_gly_pulse, "SENSITIVITIES — Pulse-only RNA/P MSE (Glycerol)")
 
 plot_pulse_sensitivities_combined(df_glu_pulse, df_gly_pulse,
-                                  save_name="August_pulse_only_sens_combined",
+                                  save_name=Proportional_RNAP_MSE_sensitivity, # FILL IN AS WHATEVER MEETS YOUR NEEDS
                                   figsize=(11.2, 6.8),
                                   color_glu=custom_palette[2], color_gly=custom_palette[7],
                                   legend_loc="best", legend_outside=False)
@@ -762,7 +762,7 @@ def plot_all_eigvec_histograms_theta(
         plt.show()
         plt.close(fig)
 
-plot_all_eigvec_histograms_theta(H_fd, color=tol_vibrant[9], save_prefix="August_Hessian")
+plot_all_eigvec_histograms_theta(H_fd, color=tol_vibrant[9], save_prefix="Proportional_Hessian")
 
 # ===========================
 # Print the 7D eigenvector components (θ-space)
